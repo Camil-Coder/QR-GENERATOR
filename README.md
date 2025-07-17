@@ -3,7 +3,7 @@
 Este es un proyecto simple pero funcional que permite **generar códigos QR desde una URL directamente en el navegador**. La aplicación fue desarrollada con **HTML, CSS y JavaScript**, utilizando la librería `qrcode.min.js` para crear los QR sin necesidad de backend.
 
 🌐 **Prueba la app aquí**:  
-👉 [https://camil-coder.github.io/qr-generator-python/](https://camil-coder.github.io/qr-generator-python/)
+👉 [https://camil-coder.github.io/QR-GENERATOR/)
 
 ---
 
