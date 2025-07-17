@@ -25,6 +25,3 @@ Este es un proyecto simple pero funcional que permite **generar códigos QR desd
 - [QRCode.js (versión minificada desde CDN)](https://github.com/soldair/node-qrcode)
 
 ---
-
-## 📁 Estructura del proyecto
-
