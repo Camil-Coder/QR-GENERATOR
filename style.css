@@ -1,0 +1,211 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f2c;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header__logo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 20px #0ff;
+}
+
+.header__title {
+    font-size: 2rem;
+    color: #70e3ff;
+    text-shadow: 0 0 8px #00f7ff;
+}
+
+/* ---------- GENERATOR ---------- */
+main {
+    text-align: center;
+}
+
+.generator__input {
+    padding: 0.7rem;
+    width: 90%;
+    max-width: 400px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.generator__button {
+    background-color: #5a00e0;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.generator__button:hover {
+    background-color: #3a00a0;
+}
+
+.generator__qr {
+    margin-top: 2rem;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.95rem;
+    color: #ccc;
+    padding: 1.5rem 1rem;
+    border-top: 1px solid #333;
+}
+
+.footer__brand {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #70e3ff;
+    margin-bottom: 0.5rem;
+}
+
+.footer__info {
+    margin-bottom: 0.8rem;
+}
+
+.footer__name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.footer__role {
+    font-style: italic;
+    color: #b8b8b8;
+}
+
+.footer__contact a {
+    color: #42e0ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer__contact a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media screen and (max-width: 768px) {
+    .header__title {
+        font-size: 1.6rem;
+    }
+
+    .generator__input {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .generator__button {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.85rem;
+        padding: 0 1rem;
+    }
+
+    .footer__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__logo {
+        width: 90px;
+    }
+
+    .header__title {
+        font-size: 1.4rem;
+    }
+
+    .generator__button {
+        font-size: 0.95rem;
+    }
+
+    .footer__name {
+        font-size: 1rem;
+    }
+
+    .footer__role {
+        font-size: 0.9rem;
+    }
+}
+
+.generator__preview {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.generator__qr-box {
+    position: relative;
+    display: inline-block;
+}
+
+.generator__qr-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0ff;
+    transition: transform 0.3s ease;
+}
+
+.generator__qr-image:hover {
+    transform: scale(1.05);
+}
+
+.generator__download {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00c8ff;
+    color: #000;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.generator__qr-box:hover .generator__download {
+    display: block;
+}

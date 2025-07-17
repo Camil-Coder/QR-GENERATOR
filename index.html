@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator QR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+
+<body class="page">
+
+    <!-- cabezera de la pagina -->
+    <header class="header">
+        <img src="pic.png" alt="Logo-camil-code" class="header__logo">
+        <h1 class="header__title">Generador de Código QR</h1>
+        <div class="generator__preview" id="previewContainer" style="display: none;">
+            <div class="generator__qr-box" id="qrBox">
+                <img id="qrImage" alt="QR generado" class="generator__qr-image" />
+                <a id="downloadBtn" class="generator__download" download="codigo_qr.png">Descargar QR</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- cuerpo -->
+    <main>
+        <input type="text" id="urlInput" class="generator__input" placeholder="Escribe un URL aquí...">
+        <button id="generateBtn" class="generator__button">Generar QR</button>
+        <div id="qrContainer" class="generator__qr"></div>
+    </main>
+
+    <!-- pie de pagina o footer -->
+    <footer class="footer">
+        <p class="footer__brand">💡 <strong>Cámil Code</strong> — Soluciones digitales con propósito</p>
+
+        <div class="footer__info">
+            <p class="footer__name">CRISTIAN CAMILO CASTILLO RODRIGUEZ</p>
+            <p class="footer__role">Desarrollador de Software Full Stack · En formación constante</p>
+        </div>
+
+        <div class="footer__contact">
+            <p>
+                🔗 <a href="https://www.linkedin.com/in/castillo-software-dev/" target="_blank">LinkedIn</a> |
+                💻 <a href="https://github.com/Camil-Coder" target="_blank">GitHub</a> |
+                📧 <a href="mailto:cristian.c.castillo1707@gmail.com">Correo</a> |
+                📱 <a href="tel:+573143846187">314 384 6187</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- logica en js -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
